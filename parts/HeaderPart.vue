@@ -1,6 +1,6 @@
 <template>
     <div>
-        Header Part Component {{title}}
+        Header Part Component.. {{title}}
     </div>
 </template>
 

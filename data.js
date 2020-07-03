@@ -46,7 +46,10 @@ export const apps = {
                         serverQueries: [],
                         events: [],
                         onNodeInit: [],
-                        onNodeDestroy: []
+                        onNodeDestroy: [],
+                        navs: [
+                            { text: 'To Node2', nextNode: 'node2'},
+                        ]
                     },
                     'node2': {
                         id: 'node2',
@@ -60,7 +63,7 @@ export const apps = {
                             addHeader: true
                         },
                         templates: [
-                            {component: 'HeaderPart', inputs: {title: 'Main title'}},
+                            {component: 'HeaderPart', inputs: {title: '$var'}},
                             {component: 'HeaderPart', inputs: {title: 'MIddle Title'}, outputs: {}}
                         ],
                         footerType: 'nav',
@@ -69,7 +72,10 @@ export const apps = {
                         serverQueries: [],
                         events: [],
                         onNodeInit: [],
-                        onNodeDestroy: []
+                        onNodeDestroy: [],
+                        navs: [
+                            { text: 'To Node1', nextNode: 'node1'}
+                        ]
                     }
                 },
                 toolbar: [],

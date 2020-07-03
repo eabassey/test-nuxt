@@ -32,7 +32,7 @@
 
 
 <script>
-import {StateFooter} from '@/components/StateFooter';
+import StateFooter from '@/components/StateFooter';
 import * as Parts from '@/parts';
 
 export default {

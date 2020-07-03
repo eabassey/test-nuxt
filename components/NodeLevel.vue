@@ -7,22 +7,17 @@
 
 
 <script>
-import {mapState} from 'vuex';
+import {mapState, mapGetters} from 'vuex';
 import * as Parts from '@/parts';
 
 export default {
     name: 'NodeLevel',
+    methods: {
+
+    },
     computed: {
         ...mapState(['activeNode']),
-        renderedTemplates() {
-            if (this.activeNode.templates && this.activeNode.templates.length) {
-                const temp = this.activeNode.templates.map(tp => {
-                return {component: Parts[tp.component], inputs: tp.inputs}
-            });
-            return temp;
-            }
-            return [];
-        }
+        ...mapGetters(['renderedTemplates'])
     }
 }
 </script>
