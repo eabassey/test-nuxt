@@ -1,6 +1,6 @@
 <template>
     <div>
-        App Level: {{activeApp.name}}
+        App Level: {{activeApp && activeApp.name}}
         <StateLevel />
     </div>
 </template>

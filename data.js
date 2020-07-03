@@ -84,7 +84,35 @@ export const apps = {
                 events: [],
                 onStateInit: [],
                 onStateDestroy: [],
-                actionPanel: {} 
+                actionPanels: {
+                    panel1: {
+                        id: 'panel1',
+                        name: 'Panel 1',
+                        startNode: 'panelNode1',
+                        icon: '',
+                        title: '',
+                        nodes: {
+                            panelNode1: {
+                                id: 'panelNode1',
+                                name: 'panelNode1',
+                                description: '',
+                                templates: [
+                                    {component: 'HeaderPart', inputs: {title: 'Title on panel node 1'}},
+                                ],
+                                footerType: 'nav',
+                                toolbar: [],
+                                serverCalls: [],
+                                serverQueries: [],
+                                events: [],
+                                onNodeInit: [],
+                                onNodeDestroy: [],
+                                navs: [
+                                    { text: 'Panel 2', nextNode: ''},
+                                ]
+                            }
+                        }
+                    }
+                } 
             }
         },
         serverCalls: [],

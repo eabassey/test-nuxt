@@ -1,6 +1,6 @@
 <template>
     <div>
-        Node Level: {{activeNode.name}}
+        Node Level: {{activeNode && activeNode.name}}
         <component v-for="(temp, i) of renderedTemplates" :key="i" :is="temp.component" v-bind="temp.inputs"></component>
     </div>
 </template>

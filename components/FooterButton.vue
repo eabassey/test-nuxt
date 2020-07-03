@@ -9,7 +9,8 @@ export default {
     props: ['nav'],
     methods: {
         selectNextNode(node) {
-            this.$router.push({params: {node}})
+            const query = this.$route.query;
+            this.$router.push({params: {node}, query})
         }
     }
 }

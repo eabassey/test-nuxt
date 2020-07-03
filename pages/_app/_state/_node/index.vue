@@ -2,11 +2,13 @@
     <div>
         Displaying something ... at node level
         <AppLevel />
+        
     </div>
 </template>
 
 <script>
 import AppLevel from '@/components/AppLevel';
+
 import {mapState} from 'vuex';
 
 export default {

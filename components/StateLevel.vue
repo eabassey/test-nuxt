@@ -1,6 +1,6 @@
 <template>
     <div>
-        State Level: {{activeState.name}}
+        State Level: {{activeState && activeState.name}}
         <NodeLevel />
     </div>
 </template>

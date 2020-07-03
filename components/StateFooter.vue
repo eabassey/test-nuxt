@@ -1,7 +1,9 @@
 <template>
     <div>
-        State Footer for  {{activeNode.name}}
-        <FooterButton v-for="(nav, i) in activeNode.navs" :nav="nav" :key="i"/>
+        State Footer for  {{activeNode && activeNode.name}}
+        <template v-if="activeNode && activeNode.navs">
+            <FooterButton v-for="(nav, i) in activeNode.navs" :nav="nav" :key="i"/>
+        </template>
     </div>
 </template>
 

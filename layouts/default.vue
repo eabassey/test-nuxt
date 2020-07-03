@@ -22,6 +22,8 @@
     <a-layout-content>
       <div :style="{ background: '#fff', padding: '24px', minHeight: '480px' }">
         <Nuxt />
+        <hr />
+        <ActionPanel />
       </div>
     </a-layout-content>
     <a-layout-footer style="text-align: center">
@@ -33,9 +35,10 @@
 
 <script>
 import StateFooter from '@/components/StateFooter';
+import ActionPanel from '@/components/ActionPanel';
 import * as Parts from '@/parts';
 
 export default {
-  components: {...Parts, StateFooter}
+  components: {...Parts, StateFooter, ActionPanel}
 }
 </script>
