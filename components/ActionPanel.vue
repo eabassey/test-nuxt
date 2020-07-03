@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <a-button variant="default" v-for="(panel, i) in panels" :key="i" @click="togglePanel(panel.id)">{{panel.id}}</a-button>
+            <a-button variant="default" v-for="(panel, i) in panels" :key="i" @click="clickPanel(panel.id)">{{panel.id}}</a-button>
         </div>
         <ActionPanelState v-if="openPanel" />
     </div>
@@ -24,11 +24,19 @@ export default {
         ...mapState({panels: state => Object.values(state.actionPanels), actionPanelState: 'actionPanelState'})
     },
     methods: {
-        // ...mapActions(['setPanelState']),
+        ...mapActions(['setPanelState']),
         togglePanel(selectedPanelId) {
-            this.openPanel = !this.openPanel;
-            this.panelId = selectedPanelId;
+            if (this.panelId === selectedPanelId) {
+                this.openPanel = !this.openPanel;
+            } else {
+                this.openPanel = true;
+            }         
+        },
+        clickPanel(panelId) {
+            this.togglePanel(panelId);
+            this.panelId = panelId;
             this.$router.push({query: {openPanel: this.openPanel, panelId: this.panelId }});
+            this.setPanelState({panelId: this.panelId});
         }
     }
 }

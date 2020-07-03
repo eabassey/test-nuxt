@@ -109,6 +109,69 @@ export const apps = {
                                 navs: [
                                     { text: 'Panel 2', nextNode: ''},
                                 ]
+                            },
+                            panelNode2: {
+                                id: 'panelNode2',
+                                name: 'panelNode2',
+                                description: '',
+                                templates: [
+                                    {component: 'HeaderPart', inputs: {title: 'Title on panel node 1'}},
+                                ],
+                                footerType: 'nav',
+                                toolbar: [],
+                                serverCalls: [],
+                                serverQueries: [],
+                                events: [],
+                                onNodeInit: [],
+                                onNodeDestroy: [],
+                                navs: [
+                                    { text: 'Panel 2', nextNode: ''},
+                                ]
+                            }
+                        }
+                    },
+                    panel2: {
+                        id: 'panel2',
+                        name: 'Panel 2',
+                        startNode: 'panelNode11',
+                        icon: '',
+                        title: '',
+                        nodes: {
+                            panelNode11: {
+                                id: 'panelNode11',
+                                name: 'panelNode11',
+                                description: '',
+                                templates: [
+                                    {component: 'HeaderPart', inputs: {title: 'Title on panel2 node 1'}},
+                                ],
+                                footerType: 'nav',
+                                toolbar: [],
+                                serverCalls: [],
+                                serverQueries: [],
+                                events: [],
+                                onNodeInit: [],
+                                onNodeDestroy: [],
+                                navs: [
+                                    { text: 'Panel 2', nextNode: ''},
+                                ]
+                            },
+                            panelNode22: {
+                                id: 'panelNode22',
+                                name: 'panelNode22',
+                                description: '',
+                                templates: [
+                                    {component: 'HeaderPart', inputs: {title: 'Title on panel2 node 2'}},
+                                ],
+                                footerType: 'nav',
+                                toolbar: [],
+                                serverCalls: [],
+                                serverQueries: [],
+                                events: [],
+                                onNodeInit: [],
+                                onNodeDestroy: [],
+                                navs: [
+                                    { text: 'Panel 2', nextNode: ''},
+                                ]
                             }
                         }
                     }

@@ -26,7 +26,7 @@ export const mutations = {
     },
 
     setPanelState(state, payload) {
-        state.actionPanelState = payload.panel;
+        state.actionPanelState = state.actionPanels[payload.panelId];
         state.actionPanelNode = state.actionPanelState.nodes[state.actionPanelState.startNode]
     }
 };
