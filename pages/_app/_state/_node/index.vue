@@ -1,9 +1,5 @@
 <template>
-    <div>
-        Displaying something ... at node level
-        <AppLevel />
-        
-    </div>
+        <AppLevel />       
 </template>
 
 <script>
@@ -22,8 +18,3 @@ export default {
 </script>
 
 
-<style scoped>
- div {
-     height: 100%;
- }
-</style>
