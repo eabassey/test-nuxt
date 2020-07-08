@@ -18,3 +18,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+# Guide
+After serving app hit `http://localhost:3000/test-app/state1/node1` to get to the test viewing page. Using `http://localhost:3000` will get u to landing page.

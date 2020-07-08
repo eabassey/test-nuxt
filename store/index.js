@@ -43,7 +43,8 @@ export const actions = {
 
     setPanelState({commit}, payload) {
         commit('setPanelState', payload)
-    }
+    },
+
 };
 
 export const getters = {
