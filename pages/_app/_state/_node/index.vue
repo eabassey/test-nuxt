@@ -18,3 +18,10 @@ export default {
 </script>
 
 
+<style lang="scss">
+    :host {
+        height: 100%;
+        display: flex;
+    }
+
+</style>

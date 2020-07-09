@@ -82,11 +82,6 @@ export default {
 
 
 <style lang="scss">
-    :host {
-    height: 100%;
-    display: flex;
-  }
-
 app-bar {
     position: relative;
   }
