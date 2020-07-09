@@ -1,8 +1,5 @@
 <template>
-    <div>
-        State Level: {{activeState && activeState.name}}
         <NodeLevel />
-    </div>
 </template>
 
 
@@ -18,3 +15,17 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+    :host {
+    width: 100%;
+  }
+  
+  [hidden] {
+    display: none !important;
+  }
+  
+  .flow-action-shell {
+    height: 100%;
+  }
+</style>

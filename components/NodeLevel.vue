@@ -12,6 +12,7 @@ import * as Parts from '@/parts';
 
 export default {
     name: 'NodeLevel',
+    components: {...Parts},
     methods: {
 
     },

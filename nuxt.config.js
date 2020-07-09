@@ -29,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['ant-design-vue/dist/antd.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
