@@ -20,7 +20,7 @@
     "ant-design-vue": "^1.6.2",
     "jmespath": "^0.15.0",
     "json-templater": "^1.2.0",
-    "nuxt": "^2.13.0",
+    "nuxt": "^3.4.3",
     "ramda": "^0.27.0"
   },
   "devDependencies": {
